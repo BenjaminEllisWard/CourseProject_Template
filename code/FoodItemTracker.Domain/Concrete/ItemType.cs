@@ -13,5 +13,6 @@ namespace FoodItemTracker.Domain.Concrete
         public string Name { get; set; }
         public TimeSpan ShelfLife { get; set; }
         public string Manufacturer { get; set; }
+
     }
 }

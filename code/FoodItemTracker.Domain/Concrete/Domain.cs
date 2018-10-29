@@ -18,6 +18,13 @@ namespace FoodItemTracker.Domain.Concrete
 
         public ItemType AddToTypes(Item item)
         {
+            ItemType type = new ItemType
+            {
+                Name = item.Name,
+                ShelfLife = item.ExpDate - DateTime.Now,
+                Manufacturer = item.Manufacturer
+            };
+
             // Ef required here
             throw new NotImplementedException();
         }
