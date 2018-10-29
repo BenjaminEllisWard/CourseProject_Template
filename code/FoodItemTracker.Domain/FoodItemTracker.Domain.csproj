@@ -116,6 +116,7 @@
   <ItemGroup>
     <Compile Include="Abstract\IDomain.cs" />
     <Compile Include="Abstract\IFoodItem.cs" />
+    <Compile Include="Abstract\IType.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Concrete\Domain.cs" />
     <Compile Include="Concrete\EFDbContext.cs" />

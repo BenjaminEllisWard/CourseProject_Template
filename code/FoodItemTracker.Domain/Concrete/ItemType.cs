@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FoodItemTracker.Domain.Abstract;
 
 namespace FoodItemTracker.Domain.Concrete
 {
-    struct ItemType
+    struct ItemType : IType
     {
         public int TypeID { get; set; }
         public string Name { get; set; }

@@ -18,18 +18,5 @@ namespace FoodItemTracker.Domain.Concrete
         public decimal Price { get; set; }
         public string Manufacturer { get; set; }
         public string Batch { get; set; }
-
-        public Item(string id, string name, int quantity, DateTime expDate, DateTime entryDate,
-                    string location, decimal price, string manufacturer, string batch)
-        {
-            this.Name = name;
-            this.Quantity = quantity;
-            this.ExpDate = expDate;
-            this.EntryDate = entryDate;
-            this.Location = location;
-            this.Price = price;
-            this.Manufacturer = manufacturer;
-            this.Batch = batch;
-        }
     }
 }
