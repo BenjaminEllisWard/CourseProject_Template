@@ -107,7 +107,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IDomain.cs" />
+    <Compile Include="Abstract\IFoodItem.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Concrete\Domain.cs" />
+    <Compile Include="Concrete\Item.cs" />
+    <Compile Include="Concrete\ItemType.cs" />
+    <Compile Include="Concrete\User.cs" />
     <Compile Include="DebuggerShim.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -115,5 +121,6 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
