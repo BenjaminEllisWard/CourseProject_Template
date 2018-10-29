@@ -8,6 +8,7 @@ namespace FoodItemTracker.Domain.Concrete
 {
     struct ItemType
     {
+        public int TypeID { get; set; }
         public string Name { get; set; }
         public TimeSpan ShelfLife { get; set; }
         public string Manufacturer { get; set; }

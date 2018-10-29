@@ -9,6 +9,7 @@ namespace FoodItemTracker.Domain.Abstract
 {
     public interface IFoodItem
     {
+        int ItemID { get; set; }
         string Name { get; }
         int Quantity { get; }
         DateTime ExpDate { get; }

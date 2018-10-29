@@ -9,6 +9,7 @@ namespace FoodItemTracker.Domain.Concrete
 {
     public class Item : IFoodItem
     {
+        public int ItemID { get; set; }
         public string Name { get; set;}
         public int Quantity { get; set; }
         public DateTime ExpDate { get; set; }
