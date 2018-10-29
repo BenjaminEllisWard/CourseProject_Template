@@ -9,8 +9,8 @@ namespace FoodItemTracker.Domain.Abstract
 {
     interface IDomain
     {
-        void AddToInventory(Item Id);
-        bool CheckIfExists(Item Id);
-        ItemType AddToTypes(Item type);
+        void AddToInventory(Item item);
+        bool CheckIfExists(Item item);
+        ItemType AddToTypes(Item item);
     }
 }
