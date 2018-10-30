@@ -116,12 +116,14 @@
   <ItemGroup>
     <Compile Include="Abstract\IDomain.cs" />
     <Compile Include="Abstract\IFoodItem.cs" />
+    <Compile Include="Abstract\IItemRepository.cs" />
     <Compile Include="Abstract\IType.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Concrete\Domain.cs" />
     <Compile Include="Concrete\EFDbContext.cs" />
     <Compile Include="Concrete\Item.cs" />
     <Compile Include="Concrete\ItemType.cs" />
+    <Compile Include="Concrete\Repositories\EFItemRepository.cs" />
     <Compile Include="Concrete\User.cs" />
     <Compile Include="DebuggerShim.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
