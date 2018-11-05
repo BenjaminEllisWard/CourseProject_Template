@@ -9,6 +9,6 @@ namespace FoodItemTracker.Domain.Abstract
 {
     public interface IItemRepository
     {
-        IEnumerable<Item> Inventory { get; }
+        IEnumerable<FoodItem> Inventory { get; }
     }
 }

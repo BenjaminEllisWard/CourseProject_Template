@@ -121,17 +121,26 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Concrete\Domain.cs" />
     <Compile Include="Concrete\EFDbContext.cs" />
-    <Compile Include="Concrete\Item.cs" />
+    <Compile Include="Concrete\FoodItem.cs" />
     <Compile Include="Concrete\ItemType.cs" />
     <Compile Include="Concrete\Repositories\EFItemRepository.cs" />
     <Compile Include="Concrete\User.cs" />
     <Compile Include="DebuggerShim.cs" />
+    <Compile Include="Migrations\201811011612309_Item.cs" />
+    <Compile Include="Migrations\201811011612309_Item.Designer.cs">
+      <DependentUpon>201811011612309_Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201811011612309_Item.resx">
+      <DependentUpon>201811011612309_Item.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

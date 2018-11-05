@@ -12,7 +12,7 @@ namespace FoodItemTracker.Domain.Concrete.Repositories
     {
         private EFDbContext context = new EFDbContext();
 
-        public IEnumerable<Item> Inventory
+        public IEnumerable<FoodItem> Inventory
         {
             get { return context.Inventory; }
         }

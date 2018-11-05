@@ -10,13 +10,13 @@ namespace FoodItemTracker.Domain.Concrete
     class Domain : IDomain
     {
 
-        public void AddToInventory(Item item)
+        public void AddToInventory(FoodItem item)
         {
             // EF required here
             throw new NotImplementedException();
         }
 
-        public ItemType AddToTypes(Item item)
+        public ItemType AddToTypes(FoodItem item)
         {
             ItemType type = new ItemType
             {
@@ -29,7 +29,7 @@ namespace FoodItemTracker.Domain.Concrete
             throw new NotImplementedException();
         }
 
-        public bool CheckIfExists(Item item)
+        public bool CheckIfExists(FoodItem item)
         {
             // check item types table
             // return as appropriate
